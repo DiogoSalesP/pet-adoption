@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+# PetAdopt - Plataforma de Adoção de Animais 🐕🐈  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Projeto desenvolvido para a disciplina de Atividade Extensionista: Tecnologia Aplicada à Inclusão Digitalna.**  
 
-Currently, two official plugins are available:
+![Banner ou Screenshot do Projeto](src/assets/images/banner.png) *(adicione uma imagem ilustrativa quando disponível)*  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Visão Geral  
+O **PetAdopt** é uma plataforma web desenvolvida em React para facilitar a adoção de animais. O projeto visa conectar pessoas interessadas em adotar pets a abrigos e ONGs, proporcionando uma experiência intuitiva e informativa.  
 
-## Expanding the ESLint configuration
+### 🔗 Link do Deploy *(opcional)*  
+🔗 [https://seusite-deploy.com](https://seusite-deploy.com) *(caso já esteja hospedado em Vercel, Netlify, GitHub Pages, etc.)*  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Como Executar o Projeto  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Pré-requisitos  
+- Node.js (v16 ou superior)  
+- npm ou yarn  
+- Git (para clonar o repositório)  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Passos para Instalação  
+1. **Clone o repositório**  
+   ```bash
+   git clone https://github.com/seu-usuario/pet-adopt.git
+   cd pet-adopt
+2. **Instale as dependências**
+    npm install
+    # ou
+    yarn install
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+3. **Inicie o servidor de desenvolvimento**  
+   ```bash
+   npm start
+    # ou
+    yarn start
+O projeto estará disponível em: http://localhost:3000
